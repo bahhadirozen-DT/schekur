@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim | SCHEKUR Endüstriyel Kontrol</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .bg-schekur-dark { background-color: #0b172a; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <div class="bg-schekur-dark p-2 rounded text-white font-bold tracking-wider text-xl px-4">SCHEKUR</div>
+            </a>
+            <nav class="hidden md:flex space-x-6 font-medium text-gray-700">
+                <a href="index.html" class="hover:text-blue-600 transition">Anasayfa</a>
+                <a href="kurumsal.html" class="hover:text-blue-600 transition">Kurumsal</a>
+                <a href="urunler.html" class="hover:text-blue-600 transition">Ürünler</a>
+                <a href="teknik.html" class="hover:text-blue-600 transition">Teknik Bilgiler</a>
+                <a href="iletisim.html" class="text-blue-600 font-bold">İletişim</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bg-schekur-dark text-white py-12 text-center">
+        <h1 class="text-3xl font-bold tracking-wide uppercase">İLETİŞİM</h1>
+        <p class="text-gray-400 text-sm mt-2">Sorularınız ve Talepleriniz İçin Bizimle İletişime Geçin</p>
+    </section>
+
+    <section class="container mx-auto px-4 py-16 max-w-5xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            
+            <div>
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Merkez Ofisimiz</h2>
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-blue-100 text-blue-600 p-3 rounded-full"><i class="fas fa-map-marker-alt text-xl"></i></div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Adres</h4>
+                            <p class="text-gray-600 text-sm mt-1">İstanbul, Türkiye</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-blue-100 text-blue-600 p-3 rounded-full"><i class="fas fa-phone text-xl"></i></div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Telefon</h4>
+                            <p class="text-gray-600 text-sm mt-1">+90 (216) XXX XX XX</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-blue-100 text-blue-600 p-3 rounded-full"><i class="fas fa-envelope text-xl"></i></div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">E-Posta</h4>
+                            <p class="text-gray-600 text-sm mt-1">info@schekur.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm border">
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Bize Mesaj Gönderin</h3>
+                <form class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-gray-600 mb-1">Adınız Soyadınız</label>
+                        <input type="text" class="w-full border rounded p-2 text-sm focus:outline-none focus:border-blue-500" placeholder="Örn: Ahmet Yılmaz">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-gray-600 mb-1">E-Posta Adresiniz</label>
+                        <input type="email" class="w-full border rounded p-2 text-sm focus:outline-none focus:border-blue-500" placeholder="ahmet@firma.com">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-gray-600 mb-1">Mesajınız</label>
+                        <textarea rows="4" class="w-full border rounded p-2 text-sm focus:outline-none focus:border-blue-500" placeholder="Talebinizi buraya yazabilirsiniz..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 rounded text-sm transition">Gönder</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-schekur-dark text-gray-400 py-8 text-center text-xs border-t border-gray-800">
+        &copy; 2026 SCHEKUR. Tüm Hakları Saklıdır.
+    </footer>
+</body>
+</html>
