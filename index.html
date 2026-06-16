@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHEKUR | Endüstriyel Kontrol ve Otomasyon Sistemleri</title>
+    <!-- Tailwind CSS ve FontAwesome İkonları -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Logonun koyu lacivert tonunu ana renk yapıyoruz */
+        .bg-schekur-dark { background-color: #0b172a; }
+        .text-schekur-dark { color: #0b172a; }
+        .border-schekur-dark { border-color: #0b172a; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- ÜST BİLGİ SATIRI (TOPBAR) -->
+    <div class="bg-schekur-dark text-white text-xs py-2 px-4 hidden md:flex justify-between items-center border-b border-gray-700">
+        <div class="flex space-x-4">
+            <span><i class="fas fa-phone mr-2"></i> +90 (216) XXX XX XX</span>
+            <span><i class="fas fa-envelope mr-2"></i> info@schekur.com</span>
+        </div>
+        <div class="flex space-x-4">
+            <a href="#" class="hover:text-gray-300">TR</a>
+            <a href="#" class="hover:text-gray-300">EN</a>
+        </div>
+    </div>
+
+    <!-- NAVİGASYON (HEADER) -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo Alanı -->
+            <a href="index.html" class="flex items-center space-x-2">
+                <!-- Buraya logonuzu (image_3f9bbe.png) ekleyeceksiniz -->
+                <div class="bg-schekur-dark p-2 rounded text-white font-bold tracking-wider text-xl px-4">
+                    SCHEKUR
+                </div>
+            </a>
+            
+            <!-- Menü Linkleri -->
+            <nav class="hidden md:flex space-x-6 font-medium text-gray-700">
+                <a href="index.html" class="text-blue-600 hover:text-blue-800">Anasayfa</a>
+                <a href="kurumsal.html" class="hover:text-blue-600 transition">Kurumsal</a>
+                <a href="urunler.html" class="hover:text-blue-600 transition">Ürünler</a>
+                <a href="teknik.html" class="hover:text-blue-600 transition">Teknik Bilgiler</a>
+                <a href="iletisim.html" class="hover:text-blue-600 transition">İletişim</a>
+            </nav>
+
+            <!-- Mobil Menü Butonu -->
+            <button class="md:hidden text-gray-700 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- KAHRAMAN ALANI (HERO SLIDER ALTYAPISI) -->
+    <section class="relative bg-schekur-dark text-white py-24 md:py-36 overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200');"></div>
+        <div class="container mx-auto px-4 relative z-10 text-center md:text-left md:max-w-3xl">
+            <h1 class="text-3xl md:text-5xl font-extrabold mb-4 uppercase tracking-wide">
+                SCHEKUR Endüstriyel Kontrol Sistemleri
+            </h1>
+            <p class="text-lg md:text-xl mb-8 text-gray-300">
+                Pro proses otomasyonu, akış kontrol ekipmanları ve yüksek performanslı vana çözümlerinde güvenilir ortağınız.
+            </p>
+            <a href="urunler.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded shadow-lg transition">
+                Ürünlerimizi İnceleyin <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ÖNE ÇIKAN ÜRÜN KATEGORİLERİ -->
+    <section class="py-16 container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900">Ürün Gruplarımız</h2>
+            <div class="w-16 h-1 bg-blue-600 mx-auto mt-3"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Kategori 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-400">
+                    <!-- Görsel geldikçe img tagına çevrilebilir -->
+                    <i class="fas fa-cogs text-5xl"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Solenoid Vanalar</h3>
+                    <p class="text-gray-600 text-sm mb-4">Hava, gaz, su ve hafif yağlar için yüksek kaliteli ve uzun ömürlü SCHEKUR solenoid vana çözümleri.</p>
+                    <a href="#" class="text-blue-600 font-semibold text-sm hover:underline">Detaylar <i class="fas fa-chevron-right ml-1 text-xs"></i></a>
+                </div>
+            </div>
+
+            <!-- Kategori 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-400">
+                    <i class="fas fa-compress-alt text-5xl"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Pnömatik Aktüatörler</h3>
+                    <p class="text-gray-600 text-sm mb-4">Çift etkili ve tek etkili (yay geri dönüşlü) SCHEKUR pnömatik aktüatör serisi.</p>
+                    <a href="#" class="text-blue-600 font-semibold text-sm hover:underline">Detaylar <i class="fas fa-chevron-right ml-1 text-xs"></i></a>
+                </div>
+            </div>
+
+            <!-- Kategori 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-400">
+                    <i class="fas fa-network-wired text-5xl"></i>
+                </div>
+                <div class="p-6">
+                    <div class="p-0">
+                        <h3 class="text-xl font-bold mb-2">Proses Vanaları</h3>
+                        <p class="text-gray-600 text-sm mb-4">Endüstriyel tesisler için SCHEKUR güvencesiyle üretilen küresel, kelebek ve pistonlu vanalar.</p>
+                        <a href="#" class="text-blue-600 font-semibold text-sm hover:underline">Detaylar <i class="fas fa-chevron-right ml-1 text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (ALT BİLGİ) -->
+    <footer class="bg-schekur-dark text-gray-400 py-12 border-t border-gray-800">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4">SCHEKUR</h4>
+                <p class="text-sm leading-relaxed">SCHEKUR, endüstriyel akış kontrolü ve proses otomasyonu alanında uluslararası standartlarda çözümler sunmaktadır.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4">Hızlı Menü</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="kurumsal.html" class="hover:text-white">Hakkımızda</a></li>
+                    <li><a href="urunler.html" class="hover:text-white">Ürün Grupları</a></li>
+                    <li><a href="teknik.html" class="hover:text-white">Teknik Dökümanlar</a></li>
+                    <li><a href="iletisim.html" class="hover:text-white">İletişim</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4">İletişim Bilgileri</h4>
+                <p class="text-sm mb-2"><i class="fas fa-map-marker-alt mr-2 text-blue-500"></i> İstanbul, Türkiye</p>
+                <p class="text-sm mb-2"><i class="fas fa-phone mr-2 text-blue-500"></i> +90 (216) XXX XX XX</p>
+                <p class="text-sm"><i class="fas fa-envelope mr-2 text-blue-500"></i> info@schekur.com</p>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 mt-8 pt-6 border-t border-gray-800 text-center text-xs">
+            &copy; 2026 SCHEKUR. Tüm Hakları Saklıdır.
+        </div>
+    </footer>
+
+</body>
+</html>
