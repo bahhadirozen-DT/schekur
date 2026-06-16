@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürünlerimiz | SCHEKUR Endüstriyel Kontrol</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .bg-schekur-dark { background-color: #0b172a; }
+        .text-schekur-dark { color: #0b172a; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- ÜST BİLGİ VE HEADER (index.html ile aynı kalmalı) -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <div class="bg-schekur-dark p-2 rounded text-white font-bold tracking-wider text-xl px-4">SCHEKUR</div>
+            </a>
+            <nav class="hidden md:flex space-x-6 font-medium text-gray-700">
+                <a href="index.html" class="hover:text-blue-600 transition">Anasayfa</a>
+                <a href="kurumsal.html" class="hover:text-blue-600 transition">Kurumsal</a>
+                <a href="urunler.html" class="text-blue-600 font-bold">Ürünler</a>
+                <a href="teknik.html" class="hover:text-blue-600 transition">Teknik Bilgiler</a>
+                <a href="iletisim.html" class="hover:text-blue-600 transition">İletişim</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SAYFA BAŞLIĞI -->
+    <section class="bg-schekur-dark text-white py-12 text-center relative">
+        <h1 class="text-3xl font-bold tracking-wide">ÜRÜN KATALOĞU</h1>
+        <p class="text-gray-400 text-sm mt-2">Endüstriyel Akış ve Süreç Kontrol Ekipmanları</p>
+    </section>
+
+    <!-- ÜRÜN LİSTELEME ALANI -->
+    <div class="container mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
+        
+        <!-- SOL MENÜ (KATEGORİLER) -->
+        <aside class="w-full md:w-1/4 bg-white p-6 rounded-lg shadow-sm h-fit">
+            <h3 class="font-bold text-lg text-gray-900 mb-4 pb-2 border-b">Kategoriler</h3>
+            <ul class="space-y-3 text-sm text-gray-600 font-medium">
+                <li><a href="#" class="text-blue-600 block hover:text-blue-800"><i class="fas fa-chevron-right mr-2 text-xs"></i> Solenoid Vanalar (SCHEKUR)</a></li>
+                <li><a href="#" class="block hover:text-blue-600"><i class="fas fa-chevron-right mr-2 text-xs"></i> Pnömatik Aktüatörler</a></li>
+                <li><a href="#" class="block hover:text-blue-600"><i class="fas fa-chevron-right mr-2 text-xs"></i> Patlaç Valfler</a></li>
+                <li><a href="#" class="block hover:text-blue-600"><i class="fas fa-chevron-right mr-2 text-xs"></i> Sınır Şalter Kutuları (Limit Switch Box)</a></li>
+                <li><a href="#" class="block hover:text-blue-600"><i class="fas fa-chevron-right mr-2 text-xs"></i> Endüstriyel Vanalar</a></li>
+            </ul>
+        </aside>
+
+        <!-- SAĞ ALAN (ÜRÜN KARTLARI) -->
+        <main class="w-full md:w-3/4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Örnek Ürün 1 -->
+                <div class="bg-white border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                    <div class="h-48 bg-gray-100 flex items-center justify-center text-gray-400">
+                        <i class="fas fa-valve text-4xl"></i> <!-- Buraya gerçek ürün görseli gelecek -->
+                    </div>
+                    <div class="p-4">
+                        <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Solenoid Vana</span>
+                        <h4 class="font-bold text-gray-900 mt-1">SCHEKUR S1010 Serisi</h4>
+                        <p class="text-xs text-gray-500 mt-1">Genel Maksat Solenoid Vanası (Su, Hava, Gaz)</p>
+                        <div class="mt-4 pt-3 border-t flex justify-between items-center">
+                            <a href="#" class="text-sm font-semibold text-schekur-dark hover:text-blue-600">İncele <i class="fas fa-arrow-right text-xs ml-1"></i></a>
+                            <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded font-medium">Stokta Var</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Örnek Ürün 2 -->
+                <div class="bg-white border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                    <div class="h-48 bg-gray-100 flex items-center justify-center text-gray-400">
+                        <i class="fas fa-tools text-4xl"></i>
+                    </div>
+                    <div class="p-4">
+                        <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Aktüatör</span>
+                        <h4 class="font-bold text-gray-900 mt-1">SCHEKUR PA Serisi</h4>
+                        <p class="text-xs text-gray-500 mt-1">Çift Etkili Pnömatik Aktüatör</p>
+                        <div class="mt-4 pt-3 border-t flex justify-between items-center">
+                            <a href="#" class="text-sm font-semibold text-schekur-dark hover:text-blue-600">İncele <i class="fas fa-arrow-right text-xs ml-1"></i></a>
+                            <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded font-medium">Stokta Var</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Örnek Ürün 3 -->
+                <div class="bg-white border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                    <div class="h-48 bg-gray-100 flex items-center justify-center text-gray-400">
+                        <i class="fas fa-industry text-4xl"></i>
+                    </div>
+                    <div class="p-4">
+                        <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Patlaç Vana</span>
+                        <h4 class="font-bold text-gray-900 mt-1">SCHEKUR PV Serisi</h4>
+                        <p class="text-xs text-gray-500 mt-1">Toz Toplama Filtre Valfleri</p>
+                        <div class="mt-4 pt-3 border-t flex justify-between items-center">
+                            <a href="#" class="text-sm font-semibold text-schekur-dark hover:text-blue-600">İncele <i class="fas fa-arrow-right text-xs ml-1"></i></a>
+                            <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded font-medium">Stokta Var</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- FOOTER (index.html ile aynı) -->
+    <footer class="bg-schekur-dark text-gray-400 py-8 text-center text-xs border-t border-gray-800">
+        &copy; 2026 SCHEKUR. Tüm Hakları Saklıdır.
+    </footer>
+</body>
+</html>
