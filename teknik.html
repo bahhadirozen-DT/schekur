@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teknik Bilgiler | SCHEKUR Endüstriyel Kontrol</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .bg-schekur-dark { background-color: #0b172a; }
+        .text-schekur-dark { color: #0b172a; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- HEADER (Diğer sayfalarla aynı) -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <div class="bg-schekur-dark p-2 rounded text-white font-bold tracking-wider text-xl px-4">SCHEKUR</div>
+            </a>
+            <nav class="hidden md:flex space-x-6 font-medium text-gray-700">
+                <a href="index.html" class="hover:text-blue-600 transition">Anasayfa</a>
+                <a href="kurumsal.html" class="hover:text-blue-600 transition">Kurumsal</a>
+                <a href="urunler.html" class="hover:text-blue-600 transition">Ürünler</a>
+                <a href="teknik.html" class="text-blue-600 font-bold">Teknik Bilgiler</a>
+                <a href="iletisim.html" class="hover:text-blue-600 transition">İletişim</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SAYFA BAŞLIĞI -->
+    <section class="bg-schekur-dark text-white py-12 text-center">
+        <h1 class="text-3xl font-bold tracking-wide uppercase">TEKNİK BİLGİLER & DÖKÜMANLAR</h1>
+        <p class="text-gray-400 text-sm mt-2">Ürün Kataloğu, Kullanım Kılavuzları ve Teknik Tablolar</p>
+    </section>
+
+    <!-- TEKNİK İÇERİK ALANI -->
+    <section class="container mx-auto px-4 py-16 max-w-5xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- Sol Blok: Kataloglar -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border">
+                <h3 class="text-xl font-bold text-gray-900 mb-4 pb-2 border-b flex items-center">
+                    <i class="fas fa-file-pdf text-red-600 mr-2"></i> İndirilebilir Kataloglar
+                </h3>
+                <ul class="space-y-4">
+                    <li class="flex justify-between items-center p-3 bg-gray-50 rounded hover:bg-gray-100 transition">
+                        <div>
+                            <p class="font-semibold text-sm text-gray-800">SCHEKUR Genel Ürün Kataloğu</p>
+                            <p class="text-xs text-gray-500">PDF | 12.4 MB</p>
+                        </div>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-bold"><i class="fas fa-download mr-1"></i> İndir</a>
+                    </li>
+                    <li class="flex justify-between items-center p-3 bg-gray-50 rounded hover:bg-gray-100 transition">
+                        <div>
+                            <p class="font-semibold text-sm text-gray-800">Solenoid Vana Teknik Seçim Kataloğu</p>
+                            <p class="text-xs text-gray-500">PDF | 5.8 MB</p>
+                        </div>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-bold"><i class="fas fa-download mr-1"></i> İndir</a>
+                    </li>
+                    <li class="flex justify-between items-center p-3 bg-gray-50 rounded hover:bg-gray-100 transition">
+                        <div>
+                            <p class="font-semibold text-sm text-gray-800">Pnömatik Aktüatör Kullanım Kılavuzu</p>
+                            <p class="text-xs text-gray-500">PDF | 3.2 MB</p>
+                        </div>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-bold"><i class="fas fa-download mr-1"></i> İndir</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Sağ Blok: Teknik Tablo Şablonu -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border">
+                <h3 class="text-xl font-bold text-gray-900 mb-4 pb-2 border-b flex items-center">
+                    <i class="fas fa-table text-blue-600 mr-2"></i> Ölçü ve Basınç Dönüşüm Tablosu
+                </h3>
+                <p class="text-xs text-gray-600 mb-4">Mühendislik hesaplamalarında kullanabileceğiniz temel akışkan kontrol verileri.</p>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-xs border-collapse">
+                        <thead>
+                            <tr class="bg-gray-100 border-b">
+                                <th class="p-2 font-bold text-gray-700">Ölçü (İnç)</th>
+                                <th class="p-2 font-bold text-gray-700">DN Karşılığı</th>
+                                <th class="p-2 font-bold text-gray-700">Maks. Basınç (Bar)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y">
+                            <tr>
+                                <td class="p-2">1/8"</td>
+                                <td class="p-2">DN 6</td>
+                                <td class="p-2">16 Bar</td>
+                            </tr>
+                            <tr>
+                                <td class="p-2">1/4"</td>
+                                <td class="p-2">DN 8</td>
+                                <td class="p-2">16 Bar</td>
+                            </tr>
+                            <tr>
+                                <td class="p-2">1/2"</td>
+                                <td class="p-2">DN 15</td>
+                                <td class="p-2">16 Bar</td>
+                            </tr>
+                            <tr>
+                                <td class="p-2">1"</td>
+                                <td class="p-2">DN 25</td>
+                                <td class="p-2">10 Bar</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-schekur-dark text-gray-400 py-8 text-center text-xs border-t border-gray-800">
+        &copy; 2026 SCHEKUR. Tüm Hakları Saklıdır.
+    </footer>
+</body>
+</html>
